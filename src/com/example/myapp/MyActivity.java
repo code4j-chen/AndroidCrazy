@@ -19,8 +19,8 @@ public class MyActivity extends Activity {
     }
 
     public void clickHandler(View view) {
-        TextView tv = (TextView) findViewById(R.id.show);
-        tv.setText("Hello Android-"+ new Date());
+//        TextView tv = (TextView) findViewById(R.id.show);
+//        tv.setText("Hello Android-"+ new Date());
         
     }
 }
