@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">myapp</string>
+    <string name="app_name">相对布局</string>
     <string name="hello_world">Hello World!</string>
     <string name="ok">OK</string>
     <string name="btn1">测试按钮1</string>
