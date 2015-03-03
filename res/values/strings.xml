@@ -3,4 +3,9 @@
     <string name="app_name">myapp</string>
     <string name="hello_world">Hello World!</string>
     <string name="ok">OK</string>
+    <string name="btn1">测试按钮1</string>
+    <string name="btn2">测试按钮2</string>
+    <string name="btn3">测试按钮3</string>
+    <string name="btn4">测试按钮4</string>
+    <string name="btn5">测试按钮5</string>
 </resources>
