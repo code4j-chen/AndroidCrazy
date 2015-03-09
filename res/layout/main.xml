@@ -3,44 +3,22 @@
                 android:orientation="vertical"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
              android:id="@+id/root">
-
-    <ToggleButton
+    <AnalogClock android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <DigitalClock
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textOff="横向排列"
-            android:textOn="纵向排列"
-            android:id="@+id/toggle"/>
-    <Switch
+            android:textSize="14pt"
+            android:textColor="#f0f"
+            android:drawableRight="@drawable/ic_launcher"
+            android:id="@+id/digitalClock"/>
+    <AnalogClock
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textOff="横向排列"
-            android:textOn="纵向排列"
-            android:thumb="@drawable/check"
-            android:checked="true"
-            android:id="@+id/switcher"/>
-    <!-- 定义一个可以动态改变方向的线性布局 -->
-    <LinearLayout android:id="@+id/test"
-                  android:orientation="vertical"
-                  android:layout_width="fill_parent"
-                  android:layout_height="fill_parent"
-            >
-        <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="测试按钮一"
-                />
-        <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="测试按钮二"
-                />
-        <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="测试按钮三"
-                />
-    </LinearLayout>
+            android:dial="@drawable/watch"
+            android:hand_minute="@drawable/hand"
+            android:id="@+id/analogClock"/>
 </LinearLayout>
 
 
