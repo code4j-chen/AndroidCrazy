@@ -5,41 +5,38 @@
              android:layout_height="match_parent"
              android:id="@+id/root">
 
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blue"
+            android:id="@+id/imageButton"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_selector"
+            android:id="@+id/imageButton2"/>
     <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center">
-
-        <Button android:id="@+id/plus"
+            android:layout_margin="10sp"
+            android:layout_gravity="center_horizontal">
+        <ZoomButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="增大透明度"
-                />
-        <Button android:id="@+id/minus"
+                android:id="@+id/btn_zoom_down"
+                android:src="@drawable/btn_minus"/>
+        <ZoomButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="降低透明度"
-                />
-        <Button android:id="@+id/next"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="下一张"
-                />
-
+                android:id="@+id/btn_zoom_up"
+                android:src="@drawable/btn_plus"/>
     </LinearLayout>
-    <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1000px"
-            android:src="@drawable/shuangta"
-            android:scaleType="fitCenter"
-            android:id="@+id/image1"/>
-    <ImageView
-            android:layout_width="240dp"
-            android:layout_height="240dp"
-            android:background="#00f"
-            android:layout_marginTop="10dp"
-            android:id="@+id/image2"/>
+    <ZoomControls
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zoomControls"
+            android:layout_gravity="center_horizontal"/>
 </LinearLayout>
 
 
