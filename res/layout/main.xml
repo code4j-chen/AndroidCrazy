@@ -6,29 +6,17 @@
              android:id="@+id/root">
 
     <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="文字带阴影的按钮"
-            android:textSize="12pt"
-            android:shadowColor="#aa5"
-            android:shadowRadius="1"
-            android:shadowDx="5"
-            android:shadowDy="5"
-            android:id="@+id/button12"/>
+            android:background="@drawable/bg"
+            android:text="测试按钮"
+            android:id="@+id/button15"/>
     <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/red"
-            android:text="普通按钮"
-            android:textSize="10pt"
-            android:id="@+id/button13"/>
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"
-            android:textSize="11pt"
-            android:text="带文字的图片按钮"
-            android:id="@+id/button14"/>
+            android:background="@drawable/bg_new"
+            android:text="测试按钮"
+            android:id="@+id/button16"/>
 </LinearLayout>
 
 
