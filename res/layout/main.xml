@@ -1,66 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:orientation="vertical"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-                android:stretchColumns="1"
              android:id="@+id/root">
 
-    <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="用户名："
-                android:textSize="16sp"
-                />
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="请填写登陆账号"
-                android:selectAllOnFocus="true"
-                android:id="@+id/editText"/>
-    </TableRow>
-    <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="密码："
-                android:textSize="16sp"
-                />
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberPassword"
-                />
-    </TableRow>
-    <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="年龄:"
-                  android:textSize="16sp"/>
-        <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
-                  android:inputType="number"/>
-    </TableRow>
-    <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="生日:"
-                  android:textSize="16sp"/>
-        <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
-                  android:inputType="date"/>
-    </TableRow>
-    <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="电话:"
-                  android:textSize="16sp"/>
-        <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入您的电话"
-                  android:inputType="phone"/>
-    </TableRow>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="注册"/>
-
-</TableLayout>
+            android:text="文字带阴影的按钮"
+            android:textSize="12pt"
+            android:shadowColor="#aa5"
+            android:shadowRadius="1"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:id="@+id/button12"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red"
+            android:text="普通按钮"
+            android:textSize="10pt"
+            android:id="@+id/button13"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:textSize="11pt"
+            android:text="带文字的图片按钮"
+            android:id="@+id/button14"/>
+</LinearLayout>
 
 
 
