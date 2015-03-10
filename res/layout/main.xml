@@ -5,38 +5,18 @@
              android:layout_height="match_parent"
              android:id="@+id/root">
 
-    <ImageButton
+    <QuickContactBadge
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/blue"
-            android:id="@+id/imageButton"/>
-    <ImageButton
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/badge"/>
+    <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/button_selector"
-            android:id="@+id/imageButton2"/>
-    <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10sp"
-            android:layout_gravity="center_horizontal">
-        <ZoomButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_zoom_down"
-                android:src="@drawable/btn_minus"/>
-        <ZoomButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_zoom_up"
-                android:src="@drawable/btn_plus"/>
-    </LinearLayout>
-    <ZoomControls
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/zoomControls"
-            android:layout_gravity="center_horizontal"/>
+            android:textSize="16dp"
+            android:text="我的偶像"
+            android:id="@+id/textView13"/>
+
 </LinearLayout>
 
 
