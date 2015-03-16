@@ -5,18 +5,14 @@
              android:layout_height="match_parent"
              android:id="@+id/root">
 
-    <QuickContactBadge
-            android:layout_width="wrap_content"
+    <ListView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher"
-            android:id="@+id/badge"/>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:text="我的偶像"
-            android:id="@+id/textView13"/>
+            android:entries="@array/books"
+            android:divider="#f00"
+            android:dividerHeight="2px"
 
+            android:id="@+id/listView"/>
 </LinearLayout>
 
 
