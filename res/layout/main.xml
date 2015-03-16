@@ -8,11 +8,18 @@
     <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/books"
             android:divider="#f00"
             android:dividerHeight="2px"
+            android:headerDividersEnabled="false"
+            android:id="@+id/list1"/>
 
-            android:id="@+id/listView"/>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#0f0"
+            android:dividerHeight="2px"
+            android:headerDividersEnabled="false"
+            android:id="@+id/list2"/>
 </LinearLayout>
 
 
