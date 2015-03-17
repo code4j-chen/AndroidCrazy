@@ -5,17 +5,9 @@
 	android:layout_height="match_parent"
         android:layout_gravity="center_horizontal">
 
-    <GridView
+    <ExpandableListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:horizontalSpacing="1pt"
-            android:verticalSpacing="1pt"
-            android:numColumns="4"
-            android:gravity="center"
-            android:id="@+id/grid01"/>
-    <ImageView
-            android:layout_width="240dp"
-            android:layout_height="240dp"
-            android:layout_gravity="center_horizontal"
-            android:id="@+id/imageView"/>
+            android:id="@+id/list"
+            android:childIndicator="@drawable/ic_launcher"/>
 </LinearLayout>
