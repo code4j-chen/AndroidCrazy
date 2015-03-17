@@ -2,18 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent" >
+	android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
 
-    <AutoCompleteTextView
+    <GridView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:completionHint="请选择您喜喜欢的图书"
-            android:dropDownHorizontalOffset="10dp"
-            android:completionThreshold="1"
-            android:id="@+id/auto"/>
-    <MultiAutoCompleteTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:completionThreshold="1"
-            android:id="@+id/mauto"/>
+            android:horizontalSpacing="1pt"
+            android:verticalSpacing="1pt"
+            android:numColumns="4"
+            android:gravity="center"
+            android:id="@+id/grid01"/>
+    <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imageView"/>
 </LinearLayout>
