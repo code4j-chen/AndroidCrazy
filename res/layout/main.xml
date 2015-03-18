@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-    <ImageView
-            android:id="@+id/image"
-            android:layout_width="fill_parent"
-            android:layout_height="240px"
-            android:src="@drawable/lijiang"
-            />
-    <!-- 定义一个星级评分条 -->
-    <RatingBar
+
+    <ViewSwitcher
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewSwitcher"/>
+    <!-- 定义滚动到上一屏的按钮 -->
+    <Button
+            android:id="@+id/button_prev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:numStars="5"
-            android:max="255"
-            android:progress="255"
-            android:stepSize="0.5"
-            android:id="@+id/rating"/>
-</LinearLayout>
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="prev"
+            android:text="&lt;" />
+    <!-- 定义滚动到下一屏的按钮 -->
+    <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="next"
+            android:text="&gt;" />
+</RelativeLayout>
