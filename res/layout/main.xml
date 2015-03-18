@@ -4,18 +4,15 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 
-    <!-- 定义了一个Spinner组件，
-	指定该显示该Spinner组件的数组 -->
-    <Spinner
-            android:layout_width="fill_parent"
+    <ImageView
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:id="@+id/imageView"/>
+    <Gallery
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/books"
-            android:prompt="@string/tip"
-            />
-    <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:prompt="@string/tip"
-            />
+            android:layout_marginTop="25dp"
+            android:unselectedAlpha="0.6"
+            android:spacing="2pt"
+            android:id="@+id/gallery"/>
 </LinearLayout>
