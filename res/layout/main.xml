@@ -3,18 +3,17 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-    <Button
-            android:id="@+id/bn1"
-            android:layout_width="wrap_content"
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240px"
+            android:src="@drawable/lijiang"
+            android:id="@+id/image"/>
+    <SeekBar
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="显示"
-            />
-    <Button
-            android:id="@+id/bn2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="隐藏"
-            />
+            android:max="255"
+            android:progress="255"
+            android:thumb="@drawable/ic_launcher"
+            android:id="@+id/seekBar"/>
 </LinearLayout>
