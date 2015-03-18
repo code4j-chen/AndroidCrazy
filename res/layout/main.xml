@@ -3,18 +3,10 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-              android:gravity="center_horizontal"
         >
-    <Button
-            android:id="@+id/simple"
+
+    <CalendarView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="显示简单提示"
-            />
-    <Button
-            android:id="@+id/bn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="显示带图片的提示"
-            />
+            android:id="@+id/calendarView"/>
 </LinearLayout>
