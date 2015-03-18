@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">GridViewTest</string>
-    <string name="hello_world">Hello World!</string>
-    <string name="ok">OK</string>
-    <string name="btn1">测试按钮1</string>
-    <string name="btn2">测试按钮2</string>
-    <string name="btn3">测试按钮3</string>
-    <string name="btn4">测试按钮4</string>
-    <string name="btn5">测试按钮5</string>
-    <string name="hello">Hello</string>
+    <string name="hello">Hello World, SpinnerTest!</string>
+    <string name="app_name">列表选择框</string>
+    <string name="tip">请选择喜欢的图书</string>
 </resources>
