@@ -20,6 +20,7 @@ import android.widget.Toast;
  * @author Yeeku.H.Lee kongyeeku@163.com
  * @version 1.0
  */
+@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class SearchViewTest extends Activity implements
         SearchView.OnQueryTextListener
 {
