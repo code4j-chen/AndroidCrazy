@@ -44,10 +44,10 @@ public class NotificationTest extends Activity
                         // 设置通知内容
                 .setContentText("恭喜你，您加薪了，工资增加20%!")
                         // // 设置使用系统默认的声音、默认LED灯
-                        // .setDefaults(Notification.DEFAULT_SOUND
-                        // |Notification.DEFAULT_LIGHTS)
+                        //.setDefaults(Notification.DEFAULT_SOUND
+                        //|Notification.DEFAULT_LIGHTS)
                         // 设置通知的自定义声音
-                .setSound(Uri.parse("android.resource://org.crazyit.ui/"
+                .setSound(Uri.parse("android.resource://com.example.myapp/"
                         + R.raw.msg))
                 .setWhen(System.currentTimeMillis())
                         // 设改通知将要启动程序的Intent
