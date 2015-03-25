@@ -4,11 +4,9 @@
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	>
-<EditText 
-	android:id="@+id/txt" 
+<TextView  
 	android:layout_width="fill_parent" 
 	android:layout_height="wrap_content" 
-	android:text="用于测试的内容"
-	android:editable="false"
-	/>	
+	android:text="@string/hello"
+	/>
 </LinearLayout>
