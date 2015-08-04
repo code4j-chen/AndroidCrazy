@@ -11,6 +11,7 @@ public class PlaneGame extends Activity {
      */
     // 定义飞机的移动速度
     private int speed = 10;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,14 +24,13 @@ public class PlaneGame extends Activity {
         Display display = windowManager.getDefaultDisplay();
         DisplayMetrics metrics = new DisplayMetrics();
         display.getMetrics(metrics);
-        planeView.currentX = metrics.widthPixels /2;
-        planeView.currentY = metrics.heightPixels -40;
+        planeView.currentX = metrics.widthPixels / 2;
+        planeView.currentY = metrics.heightPixels - 40;
         planeView.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 // 获取由哪个键触发的事件
-                switch (event.getKeyCode())
-                {
+                switch (event.getKeyCode()) {
                     // 控制飞机下移
                     case KeyEvent.KEYCODE_S:
                         planeView.currentY += speed;

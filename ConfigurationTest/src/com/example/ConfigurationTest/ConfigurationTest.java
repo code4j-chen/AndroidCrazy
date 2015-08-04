@@ -15,21 +15,22 @@ public class ConfigurationTest extends Activity {
     EditText navigation;
     EditText touch;
     EditText mnc;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         // 获取应用界面中的界面组件
-        ori = (EditText)findViewById(R.id.ori);
-        navigation = (EditText)findViewById(R.id.navigation);
-        touch = (EditText)findViewById(R.id.touch);
-        mnc = (EditText)findViewById(R.id.mnc);
-        Button bn = (Button)findViewById(R.id.bn);
+        ori = (EditText) findViewById(R.id.ori);
+        navigation = (EditText) findViewById(R.id.navigation);
+        touch = (EditText) findViewById(R.id.touch);
+        mnc = (EditText) findViewById(R.id.mnc);
+        Button bn = (Button) findViewById(R.id.bn);
         bn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Configuration cfg = getResources().getConfiguration();
-                String screen = cfg.orientation == Configuration.ORIENTATION_LANDSCAPE ? "横向屏幕": "竖向屏幕";
+                String screen = cfg.orientation == Configuration.ORIENTATION_LANDSCAPE ? "横向屏幕" : "竖向屏幕";
                 String mncCode = cfg.mnc + "";
                 String naviName = cfg.orientation ==
                         Configuration.NAVIGATION_NONAV

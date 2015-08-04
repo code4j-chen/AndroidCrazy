@@ -14,29 +14,26 @@ import android.widget.Button;
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
  * <br/>Date:
- * @author  Yeeku.H.Lee kongyeeku@163.com
- * @version  1.0
+ *
+ * @author Yeeku.H.Lee kongyeeku@163.com
+ * @version 1.0
  */
-public class SecondActivity extends Activity
-{
-	@Override
-	public void onCreate(Bundle savedInstanceState)
-	{
-		super.onCreate(savedInstanceState);
-		
-		Button button = new Button(this);
-		button.setText("启动第三个");
-		setContentView(button);
-		
-		button.setOnClickListener(new OnClickListener()
-		{
-			@Override
-			public void onClick(View v)
-			{
-				Intent intent = new Intent(SecondActivity.this
-						, ActionHomeTest.class);
-				startActivity(intent);
-			}
-		});
-	}
+public class SecondActivity extends Activity {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        Button button = new Button(this);
+        button.setText("启动第三个");
+        setContentView(button);
+
+        button.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SecondActivity.this
+                        , ActionHomeTest.class);
+                startActivity(intent);
+            }
+        });
+    }
 }

@@ -14,17 +14,16 @@ import android.widget.ArrayAdapter;
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
  * <br/>Date:
+ *
  * @author Yeeku.H.Lee kongyeeku@163.com
  * @version 1.0
  */
 public class ActionBar_DropDownNav extends Activity implements
-        ActionBar.OnNavigationListener
-{
+        ActionBar.OnNavigationListener {
     private static final String SELECTED_ITEM = "selected_item";
 
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         final ActionBar actionBar = getActionBar();
@@ -37,14 +36,12 @@ public class ActionBar_DropDownNav extends Activity implements
                 new ArrayAdapter<String>(ActionBar_DropDownNav.this,
                         android.R.layout.simple_list_item_1,
                         android.R.id.text1, new String[]
-                        {"第一页","第二页","第三页" }), this);
+                        {"第一页", "第二页", "第三页"}), this);
     }
 
     @Override
-    public void onRestoreInstanceState(Bundle savedInstanceState)
-    {
-        if (savedInstanceState.containsKey(SELECTED_ITEM))
-        {
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        if (savedInstanceState.containsKey(SELECTED_ITEM)) {
             // 选中前面保存的索引对应的Fragment页
             getActionBar().setSelectedNavigationItem(
                     savedInstanceState.getInt(SELECTED_ITEM));
@@ -52,16 +49,15 @@ public class ActionBar_DropDownNav extends Activity implements
     }
 
     @Override
-    public void onSaveInstanceState(Bundle outState)
-    {
+    public void onSaveInstanceState(Bundle outState) {
         // 将当前选中的Fragment页的索引保存到Bundle中
         outState.putInt(SELECTED_ITEM,
                 getActionBar().getSelectedNavigationIndex());
     }
+
     // 当导航项被选中时激发该方法
     @Override
-    public boolean onNavigationItemSelected(int position, long id)
-    {
+    public boolean onNavigationItemSelected(int position, long id) {
         // 创建一个新的Fragment对象
         Fragment fragment = new DummyFragment();
         // 创建一个Bundle对象，用于向Fragment传入参数

@@ -14,6 +14,7 @@ public class PlaneView extends View {
     public float currentX;
     public float currentY;
     Bitmap plane;
+
     public PlaneView(Context context) {
         super(context);
         plane = BitmapFactory.decodeResource(context.getResources(), R.drawable.plane);

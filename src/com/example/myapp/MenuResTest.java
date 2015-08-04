@@ -41,8 +41,7 @@ public class MenuResTest extends Activity {
     @Override
     public boolean onContextItemSelected(MenuItem mi) {
         mi.setChecked(true);  //①
-        switch (mi.getItemId())
-        {
+        switch (mi.getItemId()) {
             case R.id.red:
                 mi.setChecked(true);
                 txt.setBackgroundColor(Color.RED);
@@ -61,13 +60,11 @@ public class MenuResTest extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem mi) {
-        if(mi.isCheckable())
-        {
+        if (mi.isCheckable()) {
             mi.setChecked(true);  //②
         }
         // 判断单击的是哪个菜单项，并针对性的作出响应。
-        switch (mi.getItemId())
-        {
+        switch (mi.getItemId()) {
             case R.id.font_10:
                 txt.setTextSize(10 * 2);
                 break;

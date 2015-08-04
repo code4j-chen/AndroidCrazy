@@ -17,6 +17,7 @@ public class DrawView extends View {
     public float currentY = 50;
     // 定义、创建画笔
     Paint p = new Paint();
+
     public DrawView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }

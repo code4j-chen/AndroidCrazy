@@ -13,7 +13,7 @@ public class MyButton extends Button {
 
 
     public MyButton(Context context, AttributeSet attributeSet) {
-        super(context,attributeSet);
+        super(context, attributeSet);
     }
 
     @Override

@@ -14,8 +14,7 @@ public class AnonymousListener extends Activity {
     Button bn;
 
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         show = (EditText) findViewById(R.id.show);

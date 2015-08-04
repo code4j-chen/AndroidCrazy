@@ -12,6 +12,7 @@ public class PopupMenuTest extends Activity {
      * Called when the activity is first created.
      */
     PopupMenu popupMenu = null;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +26,7 @@ public class PopupMenuTest extends Activity {
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId())
-                {
+                switch (item.getItemId()) {
                     case R.id.exit:
                         // ���ظöԻ���
                         popupMenu.dismiss();

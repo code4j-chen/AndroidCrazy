@@ -17,6 +17,7 @@ public class ActionHomeTest extends Activity {
      */
     private TextView txt;
     ActionBar actionBar;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,15 +39,12 @@ public class ActionHomeTest extends Activity {
 
     @Override
     // 选项菜单的菜单项被单击后的回调方法
-    public boolean onOptionsItemSelected(MenuItem mi)
-    {
-        if(mi.isCheckable())
-        {
+    public boolean onOptionsItemSelected(MenuItem mi) {
+        if (mi.isCheckable()) {
             mi.setChecked(true);
         }
         // 判断单击的是哪个菜单项，并针对性的作出响应。
-        switch (mi.getItemId())
-        {
+        switch (mi.getItemId()) {
             case android.R.id.home:
                 // 创建启动FirstActivity的Intent
                 Intent intent = new Intent(this, FirstActivity.class);
